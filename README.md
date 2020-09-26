@@ -1,2 +1,2 @@
 # snake
-pygame snake implementation
+pygame snake implementation based off of Wajiha Urooj's implementation.
