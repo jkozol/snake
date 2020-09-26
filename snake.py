@@ -4,6 +4,8 @@ import random
 
 pygame.init()
 
+name = input("Enter your username: ")
+
 yellow = (249, 200, 14)
 black = (13, 2, 33)
 red = (255, 56, 100)
@@ -31,7 +33,7 @@ def display_snake(snake_block, snake_list):
         pygame.draw.rect(dis, black, [x[0], x[1], snake_block, snake_block])
 
 def display_score(score):
-    value = font_score.render("Score: " + str(score), True, yellow)
+    value = font_score.render(name + "'s Score: " + str(score), True, yellow)
     dis.blit(value, [0, 0])
 
 def display_msg(msg, color):
@@ -118,7 +120,6 @@ def gameLoop():
  
     pygame.quit()
     quit()
-
 
 gameLoop()
 
